@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "98427392399",
+    "project_id": "courseplatform-b0cfa",
+    "storage_bucket": "courseplatform-b0cfa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:98427392399:android:1ebd9f949233676aefbbfa",
+        "android_client_info": {
+          "package_name": "com.CoursePlatform"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBicR39odh5idBxAebwDbhBYSF5iPfEiBs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:98427392399:android:0e7ac55115e424bfefbbfa",
+        "android_client_info": {
+          "package_name": "com.example.courseplatform"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBicR39odh5idBxAebwDbhBYSF5iPfEiBs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:98427392399:android:be1219828c4956a6efbbfa",
+        "android_client_info": {
+          "package_name": "com.example.mycourseplatform"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBicR39odh5idBxAebwDbhBYSF5iPfEiBs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,54 @@
+plugins {
+    id "com.android.application"
+    id 'com.google.gms.google-services' // Firebase services plugin
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin" // Flutter plugin
+}
+
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file("local.properties")
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withReader("UTF-8") { reader ->
+        localProperties.load(reader)
+    }
+}
+
+def flutterVersionCode = localProperties.getProperty("flutter.versionCode")
+if (flutterVersionCode == null) {
+    flutterVersionCode = "1"
+}
+
+def flutterVersionName = localProperties.getProperty("flutter.versionName")
+if (flutterVersionName == null) {
+    flutterVersionName = "1.0"
+}
+
+android {
+    namespace = "com.example.mycourseplatform"
+    compileSdkVersion 34 // Latest stable version; update as needed
+    ndkVersion "25.2.9519653" // Ensure this version matches with your local setup or requirements
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        applicationId = "com.example.mycourseplatform"
+        minSdkVersion 23 // Update to a reasonable version, 21 is often used
+        targetSdkVersion 34 // Match this with the latest stable version of Android SDK
+        versionCode flutterVersionCode.toInteger()
+        versionName flutterVersionName
+    }
+
+    buildTypes {
+        release {
+            // Configure signing if needed; here using debug for simplicity
+            signingConfig = signingConfigs.debug
+        }
+    }
+}
+
+flutter {
+    source = "../.."
+}
